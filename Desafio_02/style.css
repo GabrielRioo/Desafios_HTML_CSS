@@ -7,7 +7,7 @@
 body {
     height: 100vh;
 
-    background-color: rgb(39, 38, 43);
+    background-color: rgb(162, 156, 184);
 
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@ body {
 }
 
 div.content {
-    background-color: #2A3746;
+    background-color: #39507D;
     width: 400px;
     height: 450px;
 
@@ -38,26 +38,36 @@ div.content {
     align-items: center;
     flex-direction: column;
 
+    box-shadow: 3px 3px 15px rgb(75, 75, 75);
     /* line-height: 50px; */
 }
 
 div.content div.profile {
     background-color: transparent;
-    border: 5px solid rgb(214, 214, 214);
+    border: 5px solid #FBE8D9;
 
     width: 120px;
     height: 120px;
 
     border-radius: 50%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content div.profile img {
+    width: 125px;
 }
 
 div.content h1.name-profile {
-    color: white;
+    color: #FBE8DA;
     margin-top: 20px;
 }
 
 div.content h2.description-profile {
-    color: #E66367;
+    color: #E192AF;
     font-size: 12pt;
 
     margin-top: 20px;
@@ -68,19 +78,20 @@ div.content button {
     font-size: 12pt;
     padding: 10px 35px;
     background-color: transparent;
-    border: 2px solid #E66367;
-    color: #E66367;
+    border: 2px solid #E192AF;
+    color: #E192AF;
     border-radius: 8px;
     transition: color .2s, background-color .5s;
 }
 
 div.content button:hover {
-    background-color: #E66367;
+    background-color: #BF799D;
+    border: 2px solid #BF799D;
     color: white;
 }
 
 div.content-footer {
-    background-color: #FFFFFF;
+    background-color: #FCE6D8;
     width: 400px;
     height: 150px;
 
@@ -90,6 +101,8 @@ div.content-footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    box-shadow: 3px 3px 15px rgb(75, 75, 75);
 
 }
 
@@ -127,5 +140,5 @@ div.content-footer div.information-profile p.information-description {
     font-weight: 900;
     font-size: 8pt;
     text-transform: uppercase;
-    color: #E66367;
+    color:  #BF799D;
 }
