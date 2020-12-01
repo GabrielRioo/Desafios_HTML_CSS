@@ -38,13 +38,13 @@ div.content {
     align-items: center;
     flex-direction: column;
 
-    box-shadow: 3px 3px 15px rgb(75, 75, 75);
+    box-shadow: 5px 5px 15px rgba(189, 189, 189, 0.541);
     /* line-height: 50px; */
 }
 
 div.content div.profile {
     background-color: transparent;
-    border: 5px solid #FBE8D9;
+    border: 5px solid #6785b3;
 
     width: 120px;
     height: 120px;
@@ -70,11 +70,30 @@ div.content h2.description-profile {
     color: #E192AF;
     font-size: 12pt;
 
+    margin-top: 10px;
+}
+
+div.content div.social-links {
     margin-top: 20px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.content div.social-links i {
+    color: #FCE6D8;
+    font-size: 16pt;
+    transition: color .5s;
+}
+
+div.content div.social-links i:hover {
+    color: #d675a7;
+    cursor: pointer;
 }
 
 div.content button {
-    margin-top: 30px;
+    margin-top: 40px;
     font-size: 12pt;
     padding: 10px 35px;
     background-color: transparent;
@@ -88,12 +107,13 @@ div.content button:hover {
     background-color: #BF799D;
     border: 2px solid #BF799D;
     color: white;
+    cursor: pointer;
 }
 
 div.content-footer {
     background-color: #FCE6D8;
     width: 400px;
-    height: 150px;
+    height: 130px;
 
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -102,7 +122,7 @@ div.content-footer {
     justify-content: space-around;
     align-items: center;
 
-    box-shadow: 3px 3px 15px rgb(75, 75, 75);
+    box-shadow: 5px 5px 15px rgba(189, 189, 189, 0.541);
 
 }
 
