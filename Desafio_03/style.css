@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content {
+    position: relative;
+
+    width: 200px;
+    height: 270px;
+
+    margin-left: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+
+div.content p {
+    position: absolute;
+    top: 30px;
+    color: white;
+
+    font-size: 100pt;
+
+}
+
+div.content:nth-child(1) {
+    background-color: #2196F3;
+}
+
+div.content:nth-child(2) {
+    background-color: #2196F3;
+}
+
+div.content:nth-child(3) {
+    background-color: #FD418F;
+}
+
+div.content:nth-child(1)::before {
+    content: "HORAS";
+    position: absolute;
+    bottom: 0;
+
+    background-color: #187bcc;
+    width: 200px;
+    height: 70px;
+    font-size: 20pt;
+    color: white;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content:nth-child(2)::before {
+    content: "MINUTOS";
+    position: absolute;
+    bottom: 0;
+
+    background-color: #187bcc;
+    width: 200px;
+    height: 70px;
+    font-size: 20pt;
+    color: white;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content:nth-child(3)::before {
+    content: "SEGUNDOS";
+    position: absolute;
+    bottom: 0;
+
+    background-color: #cf2a6f;
+    width: 200px;
+    height: 70px;
+    font-size: 20pt;
+    color: white;
+
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
