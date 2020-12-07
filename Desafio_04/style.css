@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(35, 33, 37);
+}
+
+div.road {
+    position: relative;
+
+    width: 250px;
+    height: 80px;
+
+    background-color: rgb(131, 131, 131);
+
+    /* transform-style: preserve-3d; */
+    transform: perspective(150px) rotateX(30deg);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.road div.line {
+    position: absolute;
+    
+    border: 5px dashed white;
+    letter-spacing: 10px;
+
+    width: 250px;
+    /* height: 100px; */
+
+    /* background-color: white; */
+}
