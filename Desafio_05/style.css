@@ -16,28 +16,42 @@ body {
     background-color: rgb(157, 180, 218);
 }
 
-div.content {
+div.context {
+    background-color: white;
     width: 400px;
     height: 500px;
-    position: relative;
-
     border-radius: 8px;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    overflow: hidden;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.555);
+    cursor: pointer;
+}
+
+div.content {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border-radius: 8px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    cursor: pointer;
+    overflow: hidden;
 
-    animation: animate linear 1s normal;
+    transition: 1s;
 }
 
-@keyframes animate {
-    0% {
-        
-    }
+
+
+div.context:hover > div.content {
+    transform: translateY(360px);
+
 }
 
 div.content::before {
