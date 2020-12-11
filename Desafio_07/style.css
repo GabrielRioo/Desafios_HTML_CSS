@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    background: linear-gradient(45deg ,rgb(194, 194, 194) ,rgb(255, 255, 255) 80%);
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+div.content {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    overflow: hidden;
+}
+
+div.content input#name {
+
+    width: 100%;
+    height: 100%;
+
+    color: rgb(75, 75, 75);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-top: 20px;
+
+    font-size: 13pt;
+}
+
+div.content label.lbl-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    color: rgb(139, 139, 139);
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+
+    border-bottom: 2px solid rgb(75, 75, 75);
+}
+
+div.content label.lbl-name::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid rgb(87, 171, 228);
+
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+div.content label.lbl-name span.content-name {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    font-size: 15pt;
+}
+
+div.content input#name:focus + label.lbl-name span.content-name,
+div.content input#name:valid + label.lbl-name span.content-name {
+    transform: translateY(-25px);
+    font-size: 12pt;
+    color:  rgb(87, 171, 228);
+}
+
+div.content input#name:focus + label.lbl-name::after,
+div.content input#name:valid + label.lbl-name::after {
+    transform: translateX(0%);
+}
+
+
+
+
