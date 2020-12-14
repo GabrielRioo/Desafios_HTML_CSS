@@ -5,7 +5,7 @@
 }
 
 body {
-
+    background-color:#121214;
 }
 
 nav.menu ul{
@@ -13,14 +13,17 @@ nav.menu ul{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    list-style: none;
     
 }
 
 nav.menu li {
+    position: relative;
+    top: 0;
+
     width: 100%;
-    list-style: none;
-    background-color: teal;
-    padding: 10px;
+    background-color: #8056E3;
+    padding: 15px;
     text-align: center;
     cursor: pointer;
     transition: background-color .5s;
@@ -32,11 +35,23 @@ nav.menu li {
 }
 
 nav.menu li:hover {
-    background-color: thistle;
+    background-color: #c1a7ff;
+    
 }
 
 nav.menu li > ul {
     display: none;
 }
 
+nav.menu li:hover > ul {
+    position: absolute;
+    left: 0;
+    top: 48px;
+    width: 100%;
+    display:initial
+}
+
+nav.menu ul li ul li > ul {
+    display: none;
+}
 
