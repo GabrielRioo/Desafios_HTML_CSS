@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.menu ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+nav.menu li {
+    list-style: none;
+    background-color: teal;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+nav.menu li:hover {
+    background-color: thistle;
+}
+
+nav.menu li > ul {
+    display: none;
+}
+
+
