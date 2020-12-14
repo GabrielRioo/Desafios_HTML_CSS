@@ -5,25 +5,30 @@
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 nav.menu ul{
+    width: 100vw;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
     
 }
 
 nav.menu li {
+    width: 100%;
     list-style: none;
     background-color: teal;
     padding: 10px;
     text-align: center;
     cursor: pointer;
     transition: background-color .5s;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
 }
 
 nav.menu li:hover {
