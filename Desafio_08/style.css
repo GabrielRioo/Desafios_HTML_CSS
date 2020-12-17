@@ -32,6 +32,7 @@ nav.menu li {
     font-weight: 600;
     letter-spacing: 1px;
     color: white;
+    
 }
 
 nav.menu li:hover {
@@ -41,17 +42,25 @@ nav.menu li:hover {
 
 nav.menu li > ul {
     display: none;
+
 }
 
 nav.menu li:hover > ul {
     position: absolute;
     left: 0;
-    top: 48px;
+    top: 49px;
     width: 100%;
-    display:initial
+    display:initial;
+
+
 }
 
-nav.menu ul li ul li > ul {
-    display: none;
+nav.menu ul li ul li:hover > ul {
+    left: 100.3%;
+    top: 0;
 }
+
+
+
+
 
