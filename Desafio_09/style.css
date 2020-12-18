@@ -24,28 +24,61 @@ div.content {
     
     box-shadow: 0 0 50px black;
 
-    cursor: pointer;
     transition: height 1s;
 
-    z-index: 1;
-    transform: rotateZ(180deg);
 }
 
 div.content:hover {
     height: 400px;
     background-color: rgb(231, 231, 231);
+
 }
+
+ button {
+    position: absolute;
+    background-color: rgb(0, 255, 0);
+    bottom: 20px;
+    left: 20px;
+
+    opacity: 0;
+
+    transition: opacity 1s;
+
+    padding: 5px;
+    background-color: transparent;
+
+    border: 1px solid black;
+    border-radius: 4px;
+    
+    cursor: pointer;
+
+    transition: background-color 1s, color 1s;
+}
+
+div.content:hover > button {
+    opacity: 1;
+
+} 
+
+button:hover {
+    background-color: rgb(32, 32, 32);
+    color: white;
+
+}
+
+
 
 div.content div.context {
     position: absolute;
-    bottom: 0;
+    top: 0;
     width: 300px;
     height: 200px;
-    /* z-index: 0; */
     background-color: rgb(50, 50, 54);
 
     transition: height 1s, background-color 1s;
+    
 }
+
 
 div.content:hover > div.context {
     height: 200px;
