@@ -20,7 +20,7 @@ div.content {
 
     width: 300px;
     height: 200px;
-    background-color: rgb(50, 50, 54);
+    background-color: white;
     
     box-shadow: 0 0 50px black;
 
@@ -33,10 +33,10 @@ div.content {
 
 div.content:hover {
     height: 400px;
+    background-color: rgb(231, 231, 231);
 }
 
-div.content::before {
-    content: '';
+div.content div.context {
     position: absolute;
     bottom: 0;
     width: 300px;
@@ -44,9 +44,11 @@ div.content::before {
     /* z-index: 0; */
     background-color: rgb(50, 50, 54);
 
-    transition: height 1s;
+    transition: height 1s, background-color 1s;
 }
 
-div.content:hover::before {
+div.content:hover > div.context {
     height: 200px;
+
+    background-color: rgb(224, 84, 84);
 }
